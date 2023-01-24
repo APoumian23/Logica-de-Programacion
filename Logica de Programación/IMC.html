@@ -1,0 +1,39 @@
+<meta charset= "UTF-8">
+
+<h1>Estoy programando</h1>
+
+<script>
+
+	function saltarlinea(){
+
+		document.write("<br><br>");
+
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarlinea();
+
+	}
+
+	function calcularIMC(peso,altura,) {
+
+		imc = peso/(altura*altura);
+
+		return imc;
+
+	}
+	var imcAlex = calcularIMC(84,1.78);
+	var imcErnesto = calcularIMC(70,1.75);
+	
+
+	imprimir("El promedio del imc calculado de Alex y Ernesto es de:" + Math.round((imcAlex+imcErnesto)/2));
+	
+
+	
+	
+
+
+
+</script>

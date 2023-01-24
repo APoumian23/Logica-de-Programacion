@@ -1,0 +1,43 @@
+<meta charset= "UTF-8">
+
+<h1>Estoy programando</h1>
+
+<script>
+
+	function saltarlinea(){
+
+		document.write("<br><br>");
+
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase)
+		saltarlinea();
+
+	}
+
+
+	var anho = 2022;
+	var x = "<br><br>"
+
+	imprimir("El año de nacimiento de Alex es..." + ", " + (anho-22));
+	imprimir("Alex tiene: " + (anho-2000) + " años");
+	
+
+	imprimir("El año de nacimiento de Hanna es..." + ", " + (anho-13));
+	imprimir("Hanna tiene: " + (anho-2009) + " años");
+
+	
+	var edadAlex = 22;
+	var edadHanna = 13;
+ 
+	var nombre1 ="Alex";
+	var nombre2 ="Hanna";
+
+	promedio = (edadAlex+edadHanna)/2
+	imprimir("El promedio de las edades de..." + nombre1 + ", " + nombre2 + " es de: " + Math.round(promedio));
+	document.write("<br>");
+
+
+</script>

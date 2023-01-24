@@ -1,0 +1,23 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	function dibujarcuadradoverde(x,y,color){
+		var pantalla = document.querySelector("canvas");
+    	var pincel = pantalla.getContext("2d");
+	    pincel.fillStyle = color;
+	    pincel.fillRect(x,y,50,50);
+	    pincel.strokeStyle = "Black";
+	    pincel.strokeRect(x,y,50,50);
+	}
+
+	var x = 0;
+	while(x < 600){
+		dibujarcuadradoverde(x,0,"green");
+		dibujarcuadradoverde(x,50,"white");
+		dibujarcuadradoverde(x,100,"red");
+		x = x + 50;
+	}
+
+</script>
+
+
